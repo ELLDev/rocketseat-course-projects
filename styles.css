@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --medium-grey: #c4c4cc;
+  --light-grey: #e1e1e6;
+  --dark-aquamarine: #02799d;
+  --primary-ff: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("images/mountains-universe01");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  gap: 4.3rem;
+  padding-top: 4rem;
+  padding-left: 7.2rem;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 5.36rem;
+}
+
+nav a {
+  font-family: var(--primary-ff);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.current-page {
+  color: white;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+h1 {
+  font-family: var(--primary-ff);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--light-grey);
+}
+
+p,
+nav a {
+  color: var(--medium-grey);
+}
+
+p {
+  font-family: var(--primary-ff);
+  color: var(--light-grey);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+  width: 50vw;
+}
+
+.home,
+.universo,
+.exploracao {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 76vh;
+}
+
+.home {
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.universo,
+.exploracao {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3rem;
+  padding-left: 10.2rem;
+  padding-top: 10.3rem;
+}
+
+button {
+  font-family: var(--primary-ff);
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: white;
+  border: 0.2rem solid white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 1.35rem 3.2rem;
+  transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+}
+
+button:hover {
+  background-color: white;
+  color: var(--dark-aquamarine);
+}

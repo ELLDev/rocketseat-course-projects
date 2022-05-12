@@ -13,7 +13,7 @@
 }
 
 body {
-  background-image: url("images/mountains-universe01");
+  background-image: url("images/mountains-universe01.png");
   background-size: cover;
   min-height: 100vh;
 }
@@ -104,9 +104,10 @@ p {
   padding-top: 10.3rem;
 }
 
-button {
+.button {
   font-family: var(--primary-ff);
   text-transform: uppercase;
+  text-decoration: none;
   font-style: normal;
   font-weight: 700;
   font-size: 1.4rem;
@@ -114,12 +115,11 @@ button {
   color: white;
   border: 0.2rem solid white;
   border-radius: 0.5rem;
-  cursor: pointer;
   padding: 1.35rem 3.2rem;
   transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
-button:hover {
+.button:hover {
   background-color: white;
   color: var(--dark-aquamarine);
 }

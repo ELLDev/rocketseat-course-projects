@@ -20,18 +20,25 @@
 
   <body>
     <header>
-      <a href="/">
+      <a href="/" onclick="changeRoute()">
         <img src="./images/logo.svg" alt="logo" class="logo" />
       </a>
 
       <nav>
-        <a href="/" class="current-page">Home</a>
-        <a href="/universo">O Universo</a>
-        <a href="/exploracao">Exploração</a>
+        <a href="/" class="home-page current-page" onclick="changeRoute()">Home</a>
+        <a href="/universo" class="universo-page" onclick="changeRoute()">O Universo</a>
+        <a href="/exploracao" class="exploracao-page" onclick="changeRoute()">Exploração</a>
       </nav>
     </header>
 
-    <div class="page"></div>
+    <div class="page">
+      <div class="home">
+        <h1>Explore o universo</h1>
+        <a href="/universo" class="button" onclick="changeRoute()"
+          >quero saber mais</a
+        >
+      </div>
+    </div>
 
     <script src="js/index.js" module></script>
   </body>
